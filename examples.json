@@ -1,0 +1,62 @@
+[
+  {
+    "label": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+    "input": {
+      "idade": true,
+      "fr": true,
+      "aas": true
+    },
+    "expected": {
+      "raw": {
+        "score": 3
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "idade": true,
+      "fr": true,
+      "aas": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "5 critérios: 26,2% (alto risco)",
+    "input": {
+      "idade": true,
+      "fr": true,
+      "dac": true,
+      "aas": true,
+      "angina": true
+    },
+    "expected": {
+      "raw": {
+        "score": 5
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "idade": true,
+      "fr": true,
+      "dac": true,
+      "aas": true,
+      "angina": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Só idade ≥ 65: 1 ponto = 4,7%",
+    "input": {
+      "idade": true
+    },
+    "expected": {
+      "raw": {
+        "score": 1
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "idade": true
+    },
+    "expandedZeroOptions": []
+  }
+]

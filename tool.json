@@ -1,0 +1,189 @@
+{
+  "tool": {
+    "id": "timi-sca",
+    "title": "Escore TIMI (SCA sem supra de ST)",
+    "short": "Angina instável e IAM sem supra",
+    "spec": [
+      "cardiologia",
+      "medicina-de-emergencia"
+    ],
+    "desc": "Calculadora do escore de risco TIMI para angina instável e infarto sem supradesnível do ST: risco de morte, infarto ou revascularização urgente em 14 dias.",
+    "lead": "Estima o risco de morte, novo infarto ou revascularização urgente em 14 dias na angina instável e no infarto sem supradesnível do ST.",
+    "fields": [
+      [
+        "idade",
+        "Idade ≥ 65 anos",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "fr",
+        "≥ 3 fatores de risco para DAC",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "dac",
+        "Estenose coronária conhecida ≥ 50%",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "aas",
+        "Uso de AAS nos últimos 7 dias",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "angina",
+        "≥ 2 episódios de angina em 24 horas",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "st",
+        "Desvio do ST ≥ 0,5 mm",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "marc",
+        "Marcador de necrose elevado",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "formula": "<p>Um ponto por item presente (total de 0 a 7).</p>",
+    "table": [
+      [
+        "Pontos",
+        "Morte, IAM ou revascularização urgente em 14 dias"
+      ],
+      [
+        "0 a 1",
+        "4,7%"
+      ],
+      [
+        "2",
+        "8,3%"
+      ],
+      [
+        "3",
+        "13,2%"
+      ],
+      [
+        "4",
+        "19,9%"
+      ],
+      [
+        "5",
+        "26,2%"
+      ],
+      [
+        "6 a 7",
+        "40,9%"
+      ]
+    ],
+    "tips": [
+      "TIMI ≥ 3 identifica pacientes que se beneficiam mais de estratégia invasiva precoce e antitrombóticos mais potentes.",
+      "O escore GRACE tem melhor discriminação para mortalidade; use o TIMI como triagem rápida à beira do leito.",
+      "Fatores de risco considerados: hipertensão, dislipidemia, diabetes, tabagismo atual e história familiar de DAC precoce."
+    ],
+    "sources": [
+      [
+        "Antman EM et al. The TIMI risk score for unstable angina/non–ST elevation MI. JAMA, 2000.",
+        "https://doi.org/10.1001/jama.284.7.835"
+      ]
+    ],
+    "cases": [
+      [
+        "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+        {
+          "idade": true,
+          "fr": true,
+          "aas": true
+        },
+        {
+          "raw": {
+            "score": 3
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "5 critérios: 26,2% (alto risco)",
+        {
+          "idade": true,
+          "fr": true,
+          "dac": true,
+          "aas": true,
+          "angina": true
+        },
+        {
+          "raw": {
+            "score": 5
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Só idade ≥ 65: 1 ponto = 4,7%",
+        {
+          "idade": true
+        },
+        {
+          "raw": {
+            "score": 1
+          },
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "cardiologia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cardiologia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cardiologia.php",
+    "sha256": "ed536451dd02922a7f840f2c9ce575be004cddb227f60426b7a52cf1b0e94ec0",
+    "bytes": 61303
+  },
+  "clinicalValidation": "not-performed"
+}
