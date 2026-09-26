@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-timi-sca",
   "version": "0.1.0",
-  "description": "Escore TIMI (SCA sem supra de ST) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Escore TIMI (SCA sem supra de ST) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",

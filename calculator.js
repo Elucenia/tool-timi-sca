@@ -1,11 +1,11 @@
-/* tool-timi-sca · Elucenia · https://github.com/Elucenia/tool-timi-sca
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-timi-sca · ELUCENIA · https://github.com/Elucenia/tool-timi-sca
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"timi-sca","title":"Escore TIMI (SCA sem supra de ST)","fields":[["idade","Idade ≥ 65 anos","chk",{"pts":1}],["fr","≥ 3 fatores de risco para DAC","chk",{"pts":1}],["dac","Estenose coronária conhecida ≥ 50%","chk",{"pts":1}],["aas","Uso de AAS nos últimos 7 dias","chk",{"pts":1}],["angina","≥ 2 episódios de angina em 24 horas","chk",{"pts":1}],["st","Desvio do ST ≥ 0,5 mm","chk",{"pts":1}],["marc","Marcador de necrose elevado","chk",{"pts":1}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
