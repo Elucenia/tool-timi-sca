@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean idade",
+    "input": {
+      "idade": "2",
+      "fr": true,
+      "aas": true,
+      "dac": false,
+      "angina": false,
+      "st": false,
+      "marc": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean fr",
+    "input": {
+      "idade": true,
+      "fr": "2",
+      "aas": true,
+      "dac": false,
+      "angina": false,
+      "st": false,
+      "marc": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dac",
+    "input": {
+      "idade": true,
+      "fr": true,
+      "aas": true,
+      "dac": "2",
+      "angina": false,
+      "st": false,
+      "marc": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean aas",
+    "input": {
+      "idade": true,
+      "fr": true,
+      "aas": "2",
+      "dac": false,
+      "angina": false,
+      "st": false,
+      "marc": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "aas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean angina",
+    "input": {
+      "idade": true,
+      "fr": true,
+      "aas": true,
+      "dac": false,
+      "angina": "2",
+      "st": false,
+      "marc": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "angina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean st",
+    "input": {
+      "idade": true,
+      "fr": true,
+      "aas": true,
+      "dac": false,
+      "angina": false,
+      "st": "2",
+      "marc": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "st"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean marc",
+    "input": {
+      "idade": true,
+      "fr": true,
+      "aas": true,
+      "dac": false,
+      "angina": false,
+      "st": false,
+      "marc": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "marc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

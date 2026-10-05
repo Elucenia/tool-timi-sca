@@ -3,106 +3,58 @@
     "id": "timi-sca",
     "title": "Escore TIMI (SCA sem supra de ST)",
     "short": "Angina instável e IAM sem supra",
+    "desc": "Calculadora do escore de risco TIMI para angina instável e infarto sem supradesnível do ST: risco de morte, infarto ou revascularização urgente em 14 dias.",
+    "lead": "Estima o risco de morte, novo infarto ou revascularização urgente em 14 dias na angina instável e no infarto sem supradesnível do ST.",
+    "kind": "Calculadora",
     "spec": [
       "cardiologia",
       "medicina-de-emergencia"
     ],
-    "desc": "Calculadora do escore de risco TIMI para angina instável e infarto sem supradesnível do ST: risco de morte, infarto ou revascularização urgente em 14 dias.",
-    "lead": "Estima o risco de morte, novo infarto ou revascularização urgente em 14 dias na angina instável e no infarto sem supradesnível do ST.",
     "fields": [
       [
         "idade",
         "Idade ≥ 65 anos",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "fr",
         "≥ 3 fatores de risco para DAC",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "dac",
         "Estenose coronária conhecida ≥ 50%",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "aas",
         "Uso de AAS nos últimos 7 dias",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "angina",
         "≥ 2 episódios de angina em 24 horas",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "st",
         "Desvio do ST ≥ 0,5 mm",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "marc",
         "Marcador de necrose elevado",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
     "formula": "<p>Um ponto por item presente (total de 0 a 7).</p>",
-    "table": [
-      [
-        "Pontos",
-        "Morte, IAM ou revascularização urgente em 14 dias"
-      ],
-      [
-        "0 a 1",
-        "4,7%"
-      ],
-      [
-        "2",
-        "8,3%"
-      ],
-      [
-        "3",
-        "13,2%"
-      ],
-      [
-        "4",
-        "19,9%"
-      ],
-      [
-        "5",
-        "26,2%"
-      ],
-      [
-        "6 a 7",
-        "40,9%"
-      ]
-    ],
-    "tips": [
-      "TIMI ≥ 3 identifica pacientes que se beneficiam mais de estratégia invasiva precoce e antitrombóticos mais potentes.",
-      "O escore GRACE tem melhor discriminação para mortalidade; use o TIMI como triagem rápida à beira do leito.",
-      "Fatores de risco considerados: hipertensão, dislipidemia, diabetes, tabagismo atual e história familiar de DAC precoce."
-    ],
     "sources": [
       [
         "Antman EM et al. The TIMI risk score for unstable angina/non–ST elevation MI. JAMA, 2000.",
@@ -153,9 +105,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -164,17 +113,452 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T16:56:01.160Z",
+      "total": 128,
+      "passed": 128,
+      "sourceRowCount": 128,
+      "uniqueApiInputCount": 128,
+      "sourceContextCount": 128,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "cb37edd490a9eed1c4e140db481e8518191fceb55fd142a00ebd3f9d9e319af5",
+        "total": 128,
+        "bankRowCount": 128,
+        "uniqueApiInputCount": 128,
+        "sourceContextCount": 128,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+            "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+          },
+          {
+            "file": "reports/review-20261003/eight-risk-independent-expectations-final26.json",
+            "sha256": "f5e7d0e09fb4dadaa01dd489cbca1ad3ee8e847771b8409947f3fc43ad7f4a82"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+          "sha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce"
+        },
+        "packagingRequirement": "Copy this score-only complete bank into fresh frozen26 packages only after metadata/source composition and independent peer."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 128,
+        "uniqueApiInputs": 128,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+          "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+        }
+      },
+      "scope": "Exact weighted integer sum of 128 exhaustive represented caller-selected point/binary tuples for timi-sca. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+      "sources": [
+        {
+          "id": "timi-sca",
+          "edition": "Antman2000 TIMI UA/NSTEMI, not STEMI score",
+          "url": "https://www.clinicalmonster.com/wp-content/uploads/sites/2/2016/06/Antman-TheTIMIriskScoreforNSTEMI.UA-JAMA-2000.pdf",
+          "doi": "10.1001/jama.284.7.835",
+          "access": "Original JAMA paper downloaded from clinician mirror; Methods/Table1/Figure1 inspected, Tables1/Figure1 visually read.",
+          "readScope": [
+            "PDFp1 abstract",
+            "PDFp2–3 Methods andTable1,printed837",
+            "PDFp4 Figure1/score definition,printed838"
+          ],
+          "notVerified": [
+            "RawSTthreshold≥0.5mm as a universal source variable definition",
+            "Clinical eligibility and treatment response",
+            "Current independent risk forecast or three-tier label classification"
+          ],
+          "sourceComponent": "Selected integer point sum only; detailed clinical cohort/band facts remain in the frozen original source review."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+      "evidenceSha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce",
+      "originalEvidence": {
+        "file": "reports/review-20261003/eight-risk-independent-source-check-final26.json",
+        "sha256": "b816fcbdbc88a75d30dba462f1d7a1ecfacb49b3d5487709ee9d1bd470c6d832"
+      },
+      "independentPeer": {
+        "status": "passed",
+        "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred.",
+        "recordedAt": "2026-10-04T18:58:10.728Z",
+        "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+        "previousStatus": {
+          "status": "pending",
+          "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred."
+        },
+        "peer": {
+          "file": "reports/review-20261003/eight-point-total-source-evidence-independent-peer-final26-r2.json",
+          "sha256": "6d1b854d021eef9f0f5916ed7f81a70dc8359dae5824f2508c70d29b33732d5c",
+          "summary": {
+            "checks": 8278,
+            "failed": 0,
+            "methods": 8,
+            "sourceRows": 1132,
+            "uniqueInputs": 1132,
+            "freshExecutions": 3396,
+            "helperAssertions": 6888,
+            "metadataMethods": 128,
+            "metadataRows": 53752,
+            "metadataUnique": 53680,
+            "metadataRepeats": 72
+          },
+          "scope": "Root independent peer of exact46 preimages/afterimages; independently frozen1132 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all18 previous scopes;24 fresh Node helper executions replay all8 selected-point components without clinical approval."
+        },
+        "application": {
+          "file": "reports/review-20261003/eight-point-total-source-evidence-application-final26.json",
+          "sha256": "ff192c36cc1774e583fe2b8bcdd2e10b275e774ff633d180534b012cfe5b87e3"
+        },
+        "reviewedBankScope": "Exact weighted integer sum of 128 exhaustive represented caller-selected point/binary tuples for timi-sca. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "currentBinding": {
+          "source26BankSha256": "d270cba4400576c51ba26dce0aa90955b029618f4c37e9ecaad8b79c89baa9dc",
+          "implementations": [
+            {
+              "file": "apps/website/private/tool-code/timi-sca/calculator.js",
+              "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/timi-sca/calculator.js",
+              "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/timi-sca/calculator.js",
+              "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+            }
+          ],
+          "subsequentReviewedRebinds": []
+        },
+        "originalFailuresAndScopeQualificationsPreserved": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 384,
+      "actualVmExecutions": 384,
+      "implementations": [
+        {
+          "id": "timi-sca",
+          "app": "website",
+          "file": "apps/website/private/tool-code/timi-sca/calculator.js",
+          "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+        },
+        {
+          "id": "timi-sca",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/timi-sca/calculator.js",
+          "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+        },
+        {
+          "id": "timi-sca",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/timi-sca/calculator.js",
+          "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+        }
+      ],
+      "qualifications": [
+        "Exact weighted integer sum of 128 exhaustive represented caller-selected point/binary tuples for timi-sca. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "All862 historical fixtures and every field/formula/version/approval unchanged by this candidate. Original source/clinical failures and edition warnings are not overwritten.",
+        "Four inline metadata rows are only a subset of the complete hashed downloadable bank. Independent professional/clinical/rights and full-method approvals are not performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "TIMIUA/NSTEMI/Antman 2000:7 fatores 0–1, total 0–7; sem TIMISTEMI",
+    "implementationVersion": "timi-sca@native-2026-10-03+9dc63e561786",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/10938172/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Um ponto por item presente (total de 0 a 7).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade",
+            "label": "Idade ≥ 65 anos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fr",
+            "label": "≥ 3 fatores de risco para DAC",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dac",
+            "label": "Estenose coronária conhecida ≥ 50%",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "aas",
+            "label": "Uso de AAS nos últimos 7 dias",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "angina",
+            "label": "≥ 2 episódios de angina em 24 horas",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "st",
+            "label": "Desvio do ST ≥ 0,5 mm",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "marc",
+            "label": "Marcador de necrose elevado",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "c2b499092ee67b98744a05fe76dbb05dc252040d7cd0f28f6d602e568e95d3db"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Antman EM et al. The TIMI risk score for unstable angina/non–ST elevation MI. JAMA, 2000.",
+          "url": "https://doi.org/10.1001/jama.284.7.835",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The TIMI risk score for unstable angina/non-ST elevation MI: A method for prognostication and therapeutic decision making.",
+            "year": "2000",
+            "firstPublicationDate": "2000-08-01",
+            "doi": "10.1001/jama.284.7.835",
+            "pmid": "10938172",
+            "journal": "JAMA",
+            "authors": "Antman EM, Cohen M, Bernink PJ, McCabe CH, Horacek T, Papuchis G, Mautner B, Corbalan R, Radley D, Braunwald E."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/10938172/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "ddb29e114b767011223aa008742231cc402af26b823ac2929d188e4b254a6cde",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T16:56:01.160Z",
+        "total": 128,
+        "passed": 128,
+        "sourceRowCount": 128,
+        "uniqueApiInputCount": 128,
+        "sourceContextCount": 128,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "cb37edd490a9eed1c4e140db481e8518191fceb55fd142a00ebd3f9d9e319af5",
+          "total": 128,
+          "bankRowCount": 128,
+          "uniqueApiInputCount": 128,
+          "sourceContextCount": 128,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+              "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+            },
+            {
+              "file": "reports/review-20261003/eight-risk-independent-expectations-final26.json",
+              "sha256": "f5e7d0e09fb4dadaa01dd489cbca1ad3ee8e847771b8409947f3fc43ad7f4a82"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+            "sha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce"
+          },
+          "packagingRequirement": "Copy this score-only complete bank into fresh frozen26 packages only after metadata/source composition and independent peer."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 128,
+          "uniqueApiInputs": 128,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+            "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+          }
+        },
+        "scope": "Exact weighted integer sum of 128 exhaustive represented caller-selected point/binary tuples for timi-sca. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "sources": [
+          {
+            "id": "timi-sca",
+            "edition": "Antman2000 TIMI UA/NSTEMI, not STEMI score",
+            "url": "https://www.clinicalmonster.com/wp-content/uploads/sites/2/2016/06/Antman-TheTIMIriskScoreforNSTEMI.UA-JAMA-2000.pdf",
+            "doi": "10.1001/jama.284.7.835",
+            "access": "Original JAMA paper downloaded from clinician mirror; Methods/Table1/Figure1 inspected, Tables1/Figure1 visually read.",
+            "readScope": [
+              "PDFp1 abstract",
+              "PDFp2–3 Methods andTable1,printed837",
+              "PDFp4 Figure1/score definition,printed838"
+            ],
+            "notVerified": [
+              "RawSTthreshold≥0.5mm as a universal source variable definition",
+              "Clinical eligibility and treatment response",
+              "Current independent risk forecast or three-tier label classification"
+            ],
+            "sourceComponent": "Selected integer point sum only; detailed clinical cohort/band facts remain in the frozen original source review."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+        "evidenceSha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce",
+        "originalEvidence": {
+          "file": "reports/review-20261003/eight-risk-independent-source-check-final26.json",
+          "sha256": "b816fcbdbc88a75d30dba462f1d7a1ecfacb49b3d5487709ee9d1bd470c6d832"
+        },
+        "independentPeer": {
+          "status": "passed",
+          "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred.",
+          "recordedAt": "2026-10-04T18:58:10.728Z",
+          "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+          "previousStatus": {
+            "status": "pending",
+            "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred."
+          },
+          "peer": {
+            "file": "reports/review-20261003/eight-point-total-source-evidence-independent-peer-final26-r2.json",
+            "sha256": "6d1b854d021eef9f0f5916ed7f81a70dc8359dae5824f2508c70d29b33732d5c",
+            "summary": {
+              "checks": 8278,
+              "failed": 0,
+              "methods": 8,
+              "sourceRows": 1132,
+              "uniqueInputs": 1132,
+              "freshExecutions": 3396,
+              "helperAssertions": 6888,
+              "metadataMethods": 128,
+              "metadataRows": 53752,
+              "metadataUnique": 53680,
+              "metadataRepeats": 72
+            },
+            "scope": "Root independent peer of exact46 preimages/afterimages; independently frozen1132 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all18 previous scopes;24 fresh Node helper executions replay all8 selected-point components without clinical approval."
+          },
+          "application": {
+            "file": "reports/review-20261003/eight-point-total-source-evidence-application-final26.json",
+            "sha256": "ff192c36cc1774e583fe2b8bcdd2e10b275e774ff633d180534b012cfe5b87e3"
+          },
+          "reviewedBankScope": "Exact weighted integer sum of 128 exhaustive represented caller-selected point/binary tuples for timi-sca. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+          "currentBinding": {
+            "source26BankSha256": "d270cba4400576c51ba26dce0aa90955b029618f4c37e9ecaad8b79c89baa9dc",
+            "implementations": [
+              {
+                "file": "apps/website/private/tool-code/timi-sca/calculator.js",
+                "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/timi-sca/calculator.js",
+                "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/timi-sca/calculator.js",
+                "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+              }
+            ],
+            "subsequentReviewedRebinds": []
+          },
+          "originalFailuresAndScopeQualificationsPreserved": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 384,
+        "actualVmExecutions": 384,
+        "implementations": [
+          {
+            "id": "timi-sca",
+            "app": "website",
+            "file": "apps/website/private/tool-code/timi-sca/calculator.js",
+            "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+          },
+          {
+            "id": "timi-sca",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/timi-sca/calculator.js",
+            "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+          },
+          {
+            "id": "timi-sca",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/timi-sca/calculator.js",
+            "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+          }
+        ],
+        "qualifications": [
+          "Exact weighted integer sum of 128 exhaustive represented caller-selected point/binary tuples for timi-sca. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+          "All862 historical fixtures and every field/formula/version/approval unchanged by this candidate. Original source/clinical failures and edition warnings are not overwritten.",
+          "Four inline metadata rows are only a subset of the complete hashed downloadable bank. Independent professional/clinical/rights and full-method approvals are not performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+    },
+    "limits": "Esta versão TIMI foi desenvolvida em angina instável e infarto sem supradesnível, para desfechos compostos em 14 dias, e não é a versão TIMI para STEMI. Os fatores têm definições temporais e clínicas específicas. Taxas dos ensaios históricos não determinam risco individual ou tratamento atual sem avaliação e diretriz correspondentes.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.948Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não confirma uso em STEMI, qualquer dor torácica, exclusões completas ou terapias atuais fora dos ensaios originais."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/timi-sca/calculator.js",
+    "bytes": 4966,
+    "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "86a652d5a50826628b3dc29e77f371e2d652bf78f0a026b11320b1e7ccf9404f",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "b5b418c36106346167d81d0a827c7ce09963624020e7846041b76cf38cc13612",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "b5b418c36106346167d81d0a827c7ce09963624020e7846041b76cf38cc13612",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

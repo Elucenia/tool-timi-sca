@@ -1,10 +1,22 @@
 [
   {
-    "label": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
-    "input": {
+    "id": "timi-sca",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+    "originalInput": {
       "idade": true,
       "fr": true,
       "aas": true
+    },
+    "input": {
+      "idade": true,
+      "fr": true,
+      "aas": true,
+      "dac": false,
+      "angina": false,
+      "st": false,
+      "marc": false
     },
     "expected": {
       "raw": {
@@ -12,21 +24,45 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "idade": true,
-      "fr": true,
-      "aas": true
+    "recordedResult": {
+      "main": [
+        "3",
+        "pontos"
+      ],
+      "label": "Escore TIMI",
+      "raw": {
+        "score": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "5 critérios: 26,2% (alto risco)",
-    "input": {
+    "id": "timi-sca",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "5 critérios: 26,2% (alto risco)",
+    "originalInput": {
       "idade": true,
       "fr": true,
       "dac": true,
       "aas": true,
       "angina": true
+    },
+    "input": {
+      "idade": true,
+      "fr": true,
+      "dac": true,
+      "aas": true,
+      "angina": true,
+      "st": false,
+      "marc": false
     },
     "expected": {
       "raw": {
@@ -34,19 +70,41 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "idade": true,
-      "fr": true,
-      "dac": true,
-      "aas": true,
-      "angina": true
+    "recordedResult": {
+      "main": [
+        "5",
+        "pontos"
+      ],
+      "label": "Escore TIMI",
+      "raw": {
+        "score": 5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Só idade ≥ 65: 1 ponto = 4,7%",
-    "input": {
+    "id": "timi-sca",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+    "originalInput": {
       "idade": true
+    },
+    "input": {
+      "idade": true,
+      "fr": false,
+      "dac": false,
+      "aas": false,
+      "angina": false,
+      "st": false,
+      "marc": false
     },
     "expected": {
       "raw": {
@@ -54,9 +112,23 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "idade": true
+    "recordedResult": {
+      "main": [
+        "1",
+        "pontos"
+      ],
+      "label": "Escore TIMI",
+      "raw": {
+        "score": 1
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
