@@ -1,0 +1,888 @@
+{
+  "id": "timi-sca",
+  "implementationVersion": "timi-sca@native-2026-10-05+1a05973f7267",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Morte, IAM ou revascularização urgente em 14 dias",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "13,2%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Benefício de estratégia invasiva precoce",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "5 critérios: 26,2% (alto risco)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Morte, IAM ou revascularização urgente em 14 dias",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "26,2%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Benefício de estratégia invasiva precoce",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Morte, IAM ou revascularização urgente em 14 dias",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4,7%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco baixo",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Death, MI, or urgent revascularization within 14 days",
+                "locale": "en",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "13.2%",
+                "locale": "en",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  13.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Benefit from an early invasive strategy",
+            "locale": "en",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "5 critérios: 26,2% (alto risco)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Death, MI, or urgent revascularization within 14 days",
+                "locale": "en",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "26.2%",
+                "locale": "en",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  26.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Benefit from an early invasive strategy",
+            "locale": "en",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Death, MI, or urgent revascularization within 14 days",
+                "locale": "en",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "4.7%",
+                "locale": "en",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  4.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Low risk",
+            "locale": "en",
+            "template": "documented-authored-02fc183c76d634e02279"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Muerte, IAM o revascularización urgente en 14 días",
+                "locale": "es",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "13,2%",
+                "locale": "es",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  13.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Beneficio de una estrategia invasiva precoz",
+            "locale": "es",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "5 critérios: 26,2% (alto risco)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Muerte, IAM o revascularización urgente en 14 días",
+                "locale": "es",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "26,2%",
+                "locale": "es",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  26.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Beneficio de una estrategia invasiva precoz",
+            "locale": "es",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Muerte, IAM o revascularización urgente en 14 días",
+                "locale": "es",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "4,7%",
+                "locale": "es",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  4.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo bajo",
+            "locale": "es",
+            "template": "documented-authored-02fc183c76d634e02279"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Décès, IDM ou revascularisation urgente dans les 14 jours",
+                "locale": "fr",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "13,2%",
+                "locale": "fr",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  13.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Bénéfice d'une stratégie invasive précoce",
+            "locale": "fr",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "5 critérios: 26,2% (alto risco)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Décès, IDM ou revascularisation urgente dans les 14 jours",
+                "locale": "fr",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "26,2%",
+                "locale": "fr",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  26.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Bénéfice d'une stratégie invasive précoce",
+            "locale": "fr",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Décès, IDM ou revascularisation urgente dans les 14 jours",
+                "locale": "fr",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "4,7%",
+                "locale": "fr",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  4.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque faible",
+            "locale": "fr",
+            "template": "documented-authored-02fc183c76d634e02279"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Tod, Myokardinfarkt oder dringende Revaskularisation innerhalb von 14 Tagen",
+                "locale": "de",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "13,2%",
+                "locale": "de",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  13.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nutzen einer frühen invasiven Strategie",
+            "locale": "de",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "5 critérios: 26,2% (alto risco)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Tod, Myokardinfarkt oder dringende Revaskularisation innerhalb von 14 Tagen",
+                "locale": "de",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "26,2%",
+                "locale": "de",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  26.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nutzen einer frühen invasiven Strategie",
+            "locale": "de",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Tod, Myokardinfarkt oder dringende Revaskularisation innerhalb von 14 Tagen",
+                "locale": "de",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "4,7%",
+                "locale": "de",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  4.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Niedriges Risiko",
+            "locale": "de",
+            "template": "documented-authored-02fc183c76d634e02279"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Morte, IM o rivascolarizzazione urgente entro 14 giorni",
+                "locale": "it",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "13,2%",
+                "locale": "it",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  13.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Beneficio di una strategia invasiva precoce",
+            "locale": "it",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "5 critérios: 26,2% (alto risco)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Morte, IM o rivascolarizzazione urgente entro 14 giorni",
+                "locale": "it",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "26,2%",
+                "locale": "it",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  26.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Beneficio di una strategia invasiva precoce",
+            "locale": "it",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Morte, IM o rivascolarizzazione urgente entro 14 giorni",
+                "locale": "it",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "4,7%",
+                "locale": "it",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  4.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio basso",
+            "locale": "it",
+            "template": "documented-authored-02fc183c76d634e02279"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الوفاة، أو احتشاء عضلة القلب، أو إعادة التوعي العاجلة خلال 14 يومًا",
+                "locale": "ar",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "١٣٫٢%",
+                "locale": "ar",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  13.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فائدة استراتيجية غازية مبكرة",
+            "locale": "ar",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "5 critérios: 26,2% (alto risco)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الوفاة، أو احتشاء عضلة القلب، أو إعادة التوعي العاجلة خلال 14 يومًا",
+                "locale": "ar",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "٢٦٫٢%",
+                "locale": "ar",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  26.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فائدة استراتيجية غازية مبكرة",
+            "locale": "ar",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الوفاة، أو احتشاء عضلة القلب، أو إعادة التوعي العاجلة خلال 14 يومًا",
+                "locale": "ar",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "٤٫٧%",
+                "locale": "ar",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  4.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطورة منخفضة",
+            "locale": "ar",
+            "template": "documented-authored-02fc183c76d634e02279"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "14 天内死亡、心肌梗死或紧急血运重建",
+                "locale": "zh",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "13.2%",
+                "locale": "zh",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  13.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "早期侵入性策略获益",
+            "locale": "zh",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "5 critérios: 26,2% (alto risco)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "14 天内死亡、心肌梗死或紧急血运重建",
+                "locale": "zh",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "26.2%",
+                "locale": "zh",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  26.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "早期侵入性策略获益",
+            "locale": "zh",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "14 天内死亡、心肌梗死或紧急血运重建",
+                "locale": "zh",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "4.7%",
+                "locale": "zh",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  4.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低风险",
+            "locale": "zh",
+            "template": "documented-authored-02fc183c76d634e02279"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "14日以内の死亡、心筋梗塞、または緊急血行再建",
+                "locale": "ja",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "13.2%",
+                "locale": "ja",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  13.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "早期侵襲的戦略の利益",
+            "locale": "ja",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "5 critérios: 26,2% (alto risco)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "14日以内の死亡、心筋梗塞、または緊急血行再建",
+                "locale": "ja",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "26.2%",
+                "locale": "ja",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  26.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "早期侵襲的戦略の利益",
+            "locale": "ja",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "14日以内の死亡、心筋梗塞、または緊急血行再建",
+                "locale": "ja",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "4.7%",
+                "locale": "ja",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  4.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低リスク",
+            "locale": "ja",
+            "template": "documented-authored-02fc183c76d634e02279"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "14 दिनों के भीतर मृत्यु, MI, या आपात रिवास्कुलराइज़ेशन",
+                "locale": "hi",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "13.2%",
+                "locale": "hi",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  13.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "प्रारंभिक इनवेसिव रणनीति का लाभ",
+            "locale": "hi",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "5 critérios: 26,2% (alto risco)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "14 दिनों के भीतर मृत्यु, MI, या आपात रिवास्कुलराइज़ेशन",
+                "locale": "hi",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "26.2%",
+                "locale": "hi",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  26.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "प्रारंभिक इनवेसिव रणनीति का लाभ",
+            "locale": "hi",
+            "template": "documented-authored-24e3ccc13a8883636d99"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "14 दिनों के भीतर मृत्यु, MI, या आपात रिवास्कुलराइज़ेशन",
+                "locale": "hi",
+                "template": "documented-authored-0d1721b69b0a1adbd35d"
+              },
+              "value": {
+                "text": "4.7%",
+                "locale": "hi",
+                "template": "documented-authored-1ee6fde91abb6523f5b4",
+                "sourceNumbers": [
+                  4.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कम जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-02fc183c76d634e02279"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

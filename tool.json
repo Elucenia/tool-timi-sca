@@ -273,7 +273,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "TIMIUA/NSTEMI/Antman 2000:7 fatores 0–1, total 0–7; sem TIMISTEMI",
-    "implementationVersion": "timi-sca@native-2026-10-03+9dc63e561786",
+    "implementationVersion": "timi-sca@native-2026-10-05+1a05973f7267",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/10938172/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -523,7 +523,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+      "implementationHash": "1a05973f72679cc0d548334476944eb470d3ee75bfcc36531a717bbbac11ab75",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "timi-sca@native-2026-10-03+9dc63e561786",
+          "previousImplementationHash": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7",
+          "implementationHash": "1a05973f72679cc0d548334476944eb470d3ee75bfcc36531a717bbbac11ab75",
+          "scientificBodySha256": "6d471b1d3aa16f637f30a9c06195a735be30a8f96c488415127fb191c2d72f2e",
+          "metadataContractHash": "c2b499092ee67b98744a05fe76dbb05dc252040d7cd0f28f6d602e568e95d3db",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Esta versão TIMI foi desenvolvida em angina instável e infarto sem supradesnível, para desfechos compostos em 14 dias, e não é a versão TIMI para STEMI. Os fatores têm definições temporais e clínicas específicas. Taxas dos ensaios históricos não determinam risco individual ou tratamento atual sem avaliação e diretriz correspondentes.",
     "sourceLimitEvidence": {
@@ -542,20 +570,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/timi-sca/calculator.js",
-    "bytes": 4966,
-    "sha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7"
+    "bytes": 5171,
+    "sha256": "1a05973f72679cc0d548334476944eb470d3ee75bfcc36531a717bbbac11ab75"
   },
-  "sourceToolSha256": "86a652d5a50826628b3dc29e77f371e2d652bf78f0a026b11320b1e7ccf9404f",
+  "sourceToolSha256": "cbaed7e6ba0a5587d2bf1e4d9d965e544587279f9e020a004d06a28bf78864d0",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "b5b418c36106346167d81d0a827c7ce09963624020e7846041b76cf38cc13612",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "b5b418c36106346167d81d0a827c7ce09963624020e7846041b76cf38cc13612",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -79,3 +79,34 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Benefício de estratégia invasiva precoce
+
+| Detalhes do resultado | |
+| --- | --- |
+| Morte, IAM ou revascularização urgente em 14 dias | 13,2% |
+
+
+### 2
+
+Benefício de estratégia invasiva precoce
+
+| Detalhes do resultado | |
+| --- | --- |
+| Morte, IAM ou revascularização urgente em 14 dias | 26,2% |
+
+
+### 3
+
+Risco baixo
+
+| Detalhes do resultado | |
+| --- | --- |
+| Morte, IAM ou revascularização urgente em 14 dias | 4,7% |
+

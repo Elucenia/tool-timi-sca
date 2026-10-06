@@ -1,0 +1,202 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "timi-sca",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "3fc61ceb0d5e1ba73480847a4a5b13d73aee91ff",
+    "oldEngineSha256": "9dc63e561786af5713f7c814a447604fd64fe2653a746a97c94df519235ea1a7",
+    "currentEngineSha256": "1a05973f72679cc0d548334476944eb470d3ee75bfcc36531a717bbbac11ab75"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Idade ≥ 65 + ≥ 3 fatores + AAS: 3 pontos = 13,2% em 14 dias",
+      "input": {
+        "idade": true,
+        "fr": true,
+        "aas": true,
+        "dac": false,
+        "angina": false,
+        "st": false,
+        "marc": false
+      },
+      "publicOutput": {
+        "id": "timi-sca",
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "Escore TIMI",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 3
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "Escore TIMI",
+        "level": "mid",
+        "verdict": "Benefício de estratégia invasiva precoce",
+        "rows": [
+          [
+            "Morte, IAM ou revascularização urgente em 14 dias",
+            "13,2%"
+          ]
+        ],
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "5 critérios: 26,2% (alto risco)",
+      "input": {
+        "idade": true,
+        "fr": true,
+        "dac": true,
+        "aas": true,
+        "angina": true,
+        "st": false,
+        "marc": false
+      },
+      "publicOutput": {
+        "id": "timi-sca",
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "Escore TIMI",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 5
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "Escore TIMI",
+        "level": "high",
+        "verdict": "Benefício de estratégia invasiva precoce",
+        "rows": [
+          [
+            "Morte, IAM ou revascularização urgente em 14 dias",
+            "26,2%"
+          ]
+        ],
+        "raw": {
+          "score": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Só idade ≥ 65: 1 ponto = 4,7%",
+      "input": {
+        "idade": true,
+        "fr": false,
+        "dac": false,
+        "aas": false,
+        "angina": false,
+        "st": false,
+        "marc": false
+      },
+      "publicOutput": {
+        "id": "timi-sca",
+        "main": [
+          "1",
+          "pontos"
+        ],
+        "label": "Escore TIMI",
+        "raw": {
+          "score": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 1
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1",
+          "pontos"
+        ],
+        "label": "Escore TIMI",
+        "level": "low",
+        "verdict": "Risco baixo",
+        "rows": [
+          [
+            "Morte, IAM ou revascularização urgente em 14 dias",
+            "4,7%"
+          ]
+        ],
+        "raw": {
+          "score": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

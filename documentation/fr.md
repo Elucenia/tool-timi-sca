@@ -79,3 +79,34 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Bénéfice d'une stratégie invasive précoce
+
+| Détails du résultat | |
+| --- | --- |
+| Décès, IDM ou revascularisation urgente dans les 14 jours | 13,2% |
+
+
+### 2
+
+Bénéfice d'une stratégie invasive précoce
+
+| Détails du résultat | |
+| --- | --- |
+| Décès, IDM ou revascularisation urgente dans les 14 jours | 26,2% |
+
+
+### 3
+
+Risque faible
+
+| Détails du résultat | |
+| --- | --- |
+| Décès, IDM ou revascularisation urgente dans les 14 jours | 4,7% |
+
